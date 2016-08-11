@@ -1,0 +1,6 @@
+framework module Pods_Tucan {
+  umbrella header "Pods-Tucan-umbrella.h"
+
+  export *
+  module * { export * }
+}

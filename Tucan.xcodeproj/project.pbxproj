@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33332DF41D5C400000A9F590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33332DF31D5C400000A9F590 /* AppDelegate.swift */; };
+		33332DF61D5C400000A9F590 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33332DF51D5C400000A9F590 /* SignUpViewController.swift */; };
+		33332DF91D5C400000A9F590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33332DF71D5C400000A9F590 /* Main.storyboard */; };
+		33332DFB1D5C400000A9F590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33332DFA1D5C400000A9F590 /* Assets.xcassets */; };
+		33332DFE1D5C400000A9F590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33332DFC1D5C400000A9F590 /* LaunchScreen.storyboard */; };
+		33332E0A1D5C40CA00A9F590 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33332E091D5C40CA00A9F590 /* User.swift */; };
+		33332E0C1D5C40DB00A9F590 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33332E0B1D5C40DB00A9F590 /* Message.swift */; };
+		33332E0E1D5C415900A9F590 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33332E0D1D5C415900A9F590 /* LoginViewController.swift */; };
+		33332E121D5C41A900A9F590 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33332E111D5C41A900A9F590 /* SignUp.storyboard */; };
+		33332E141D5C41AF00A9F590 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33332E131D5C41AF00A9F590 /* Login.storyboard */; };
+		33332E171D5C41CB00A9F590 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33332E161D5C41CB00A9F590 /* Contacts.storyboard */; };
+		33332E191D5C41D900A9F590 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33332E181D5C41D900A9F590 /* ContactsViewController.swift */; };
+		C77ED9FC28958FE234CA1E7D /* Pods_Tucan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20969A550E07131BF85D5D4E /* Pods_Tucan.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20969A550E07131BF85D5D4E /* Pods_Tucan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tucan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33332DF01D5C400000A9F590 /* Tucan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tucan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33332DF31D5C400000A9F590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33332DF51D5C400000A9F590 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		33332DF81D5C400000A9F590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33332DFA1D5C400000A9F590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33332DFD1D5C400000A9F590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33332DFF1D5C400000A9F590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33332E091D5C40CA00A9F590 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		33332E0B1D5C40DB00A9F590 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		33332E0D1D5C415900A9F590 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		33332E111D5C41A900A9F590 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		33332E131D5C41AF00A9F590 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		33332E161D5C41CB00A9F590 /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
+		33332E181D5C41D900A9F590 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		B3E9D1A768DE804013F2F2C2 /* Pods-Tucan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tucan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tucan/Pods-Tucan.debug.xcconfig"; sourceTree = "<group>"; };
+		D4980757B5CE31D04A5290C5 /* Pods-Tucan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tucan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tucan/Pods-Tucan.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33332DED1D5C400000A9F590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77ED9FC28958FE234CA1E7D /* Pods_Tucan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33332DE71D5C400000A9F590 = {
+			isa = PBXGroup;
+			children = (
+				33332DF21D5C400000A9F590 /* Tucan */,
+				33332DF11D5C400000A9F590 /* Products */,
+				928FA29EBC1F1141A57B20EA /* Pods */,
+				604EDAECAEA7A95F501E9F30 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		33332DF11D5C400000A9F590 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33332DF01D5C400000A9F590 /* Tucan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33332DF21D5C400000A9F590 /* Tucan */ = {
+			isa = PBXGroup;
+			children = (
+				33332E081D5C40B500A9F590 /* AppDelegate */,
+				33332E061D5C407900A9F590 /* Views */,
+				33332E051D5C406B00A9F590 /* Models */,
+				33332E071D5C408B00A9F590 /* Helpers */,
+				33332E1A1D5C421F00A9F590 /* DataStorage */,
+				33332DFA1D5C400000A9F590 /* Assets.xcassets */,
+				33332DFC1D5C400000A9F590 /* LaunchScreen.storyboard */,
+				33332DFF1D5C400000A9F590 /* Info.plist */,
+			);
+			path = Tucan;
+			sourceTree = "<group>";
+		};
+		33332E051D5C406B00A9F590 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				33332E091D5C40CA00A9F590 /* User.swift */,
+				33332E0B1D5C40DB00A9F590 /* Message.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		33332E061D5C407900A9F590 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33332E101D5C417600A9F590 /* SignUp */,
+				33332E0F1D5C416B00A9F590 /* Login */,
+				33332E151D5C41B800A9F590 /* Contacts */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		33332E071D5C408B00A9F590 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		33332E081D5C40B500A9F590 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				33332DF31D5C400000A9F590 /* AppDelegate.swift */,
+				33332DF71D5C400000A9F590 /* Main.storyboard */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		33332E0F1D5C416B00A9F590 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				33332E0D1D5C415900A9F590 /* LoginViewController.swift */,
+				33332E131D5C41AF00A9F590 /* Login.storyboard */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		33332E101D5C417600A9F590 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				33332DF51D5C400000A9F590 /* SignUpViewController.swift */,
+				33332E111D5C41A900A9F590 /* SignUp.storyboard */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		33332E151D5C41B800A9F590 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				33332E181D5C41D900A9F590 /* ContactsViewController.swift */,
+				33332E161D5C41CB00A9F590 /* Contacts.storyboard */,
+			);
+			name = Contacts;
+			sourceTree = "<group>";
+		};
+		33332E1A1D5C421F00A9F590 /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataStorage;
+			sourceTree = "<group>";
+		};
+		604EDAECAEA7A95F501E9F30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20969A550E07131BF85D5D4E /* Pods_Tucan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		928FA29EBC1F1141A57B20EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3E9D1A768DE804013F2F2C2 /* Pods-Tucan.debug.xcconfig */,
+				D4980757B5CE31D04A5290C5 /* Pods-Tucan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33332DEF1D5C400000A9F590 /* Tucan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33332E021D5C400000A9F590 /* Build configuration list for PBXNativeTarget "Tucan" */;
+			buildPhases = (
+				20B5FA011A4DD2107F83D4E9 /* [CP] Check Pods Manifest.lock */,
+				33332DEC1D5C400000A9F590 /* Sources */,
+				33332DED1D5C400000A9F590 /* Frameworks */,
+				33332DEE1D5C400000A9F590 /* Resources */,
+				E81F7ED2A134AD7D28730929 /* [CP] Embed Pods Frameworks */,
+				90B6370085A91E4D8315C2A6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tucan;
+			productName = Tucan;
+			productReference = 33332DF01D5C400000A9F590 /* Tucan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33332DE81D5C400000A9F590 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Philipp Eibl";
+				TargetAttributes = {
+					33332DEF1D5C400000A9F590 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 33332DEB1D5C400000A9F590 /* Build configuration list for PBXProject "Tucan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33332DE71D5C400000A9F590;
+			productRefGroup = 33332DF11D5C400000A9F590 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33332DEF1D5C400000A9F590 /* Tucan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33332DEE1D5C400000A9F590 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33332DFE1D5C400000A9F590 /* LaunchScreen.storyboard in Resources */,
+				33332DFB1D5C400000A9F590 /* Assets.xcassets in Resources */,
+				33332E121D5C41A900A9F590 /* SignUp.storyboard in Resources */,
+				33332E171D5C41CB00A9F590 /* Contacts.storyboard in Resources */,
+				33332E141D5C41AF00A9F590 /* Login.storyboard in Resources */,
+				33332DF91D5C400000A9F590 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20B5FA011A4DD2107F83D4E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90B6370085A91E4D8315C2A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tucan/Pods-Tucan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E81F7ED2A134AD7D28730929 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tucan/Pods-Tucan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33332DEC1D5C400000A9F590 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33332DF61D5C400000A9F590 /* SignUpViewController.swift in Sources */,
+				33332E0E1D5C415900A9F590 /* LoginViewController.swift in Sources */,
+				33332E0C1D5C40DB00A9F590 /* Message.swift in Sources */,
+				33332DF41D5C400000A9F590 /* AppDelegate.swift in Sources */,
+				33332E0A1D5C40CA00A9F590 /* User.swift in Sources */,
+				33332E191D5C41D900A9F590 /* ContactsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		33332DF71D5C400000A9F590 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33332DF81D5C400000A9F590 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33332DFC1D5C400000A9F590 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33332DFD1D5C400000A9F590 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33332E001D5C400000A9F590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33332E011D5C400000A9F590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33332E031D5C400000A9F590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E9D1A768DE804013F2F2C2 /* Pods-Tucan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tucan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PhilippEibl.Tucan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33332E041D5C400000A9F590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4980757B5CE31D04A5290C5 /* Pods-Tucan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tucan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PhilippEibl.Tucan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33332DEB1D5C400000A9F590 /* Build configuration list for PBXProject "Tucan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33332E001D5C400000A9F590 /* Debug */,
+				33332E011D5C400000A9F590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33332E021D5C400000A9F590 /* Build configuration list for PBXNativeTarget "Tucan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33332E031D5C400000A9F590 /* Debug */,
+				33332E041D5C400000A9F590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33332DE81D5C400000A9F590 /* Project object */;
+}
