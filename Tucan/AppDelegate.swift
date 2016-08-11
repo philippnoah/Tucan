@@ -7,16 +7,58 @@
 //
 
 import UIKit
+import Firebase
+import GoogleSignIn
+import FirebaseAuth
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        FIRApp.configure()
+        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
+        
+        setInitialStoryboard()
         return true
+    }
+    
+    func application(application: UIApplication,
+                     openURL url: NSURL, options: [String: AnyObject]) -> Bool {
+        return GIDSignIn.sharedInstance().handleURL(
+            url,
+            sourceApplication: options[UIApplicationOpenURLOptionsSourceApplicationKey] as? String,
+            annotation: options[UIApplicationOpenURLOptionsAnnotationKey]
+        )
+    }
+    
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError?) {
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
+        
+        let authentication = user.authentication
+        let credential = FIRGoogleAuthProvider.credentialWithIDToken(authentication.idToken,
+                                                                     accessToken: authentication.accessToken)
+        
+        FIRAuth.auth()?.signInWithCredential(credential) { (user, error) in
+            // ...
+            print("1")
+
+        }
+        
+        // ...
+        
+    }
+    
+    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
+                withError error: NSError!) {
+        // Perform any operations when the user disconnects from app here.
+        // ...
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -41,6 +83,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func setInitialStoryboard() {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Login", bundle: NSBundle.mainBundle())
+        let signUpViewController: UIViewController = storyboard.instantiateInitialViewController()!
+        // Set root view controller and make windows visible
+        self.window!.rootViewController = signUpViewController
+        self.window!.makeKeyAndVisible()
+    }
 }
 
