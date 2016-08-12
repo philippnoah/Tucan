@@ -31,11 +31,20 @@
                     <navigationItem key="navigationItem" id="0E4-mz-6lI"/>
                     <connections>
                         <outlet property="signInButton" destination="XEb-o3-Rva" id="Hlh-F7-s8r"/>
+                        <segue destination="NwN-mJ-iCs" kind="show" identifier="login" id="gJV-Db-buN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1j1-wN-e2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1375" y="51"/>
+            <point key="canvasLocation" x="1369" y="58"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="boG-rO-uOW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Contacts" id="NwN-mJ-iCs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uhW-aO-JfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794.5" y="58"/>
         </scene>
     </scenes>
 </document>

@@ -11,13 +11,17 @@ import GoogleSignIn
 import Firebase
 import FirebaseAuth
 
-class LoginViewController: UIViewController, GIDSignInUIDelegate {
+class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     
     @IBOutlet weak var signInButton: GIDSignInButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //Change this to appdelegate
+        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
         
         GIDSignIn.sharedInstance().uiDelegate = self
         
@@ -29,6 +33,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         signInButton.colorScheme = .Light
         signInButton.style = .Wide
         getUser()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -52,5 +57,41 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
                 // No user is signed in.
             }
         }
+    }
+    
+    func application(application: UIApplication,
+                     openURL url: NSURL, options: [String: AnyObject]) -> Bool {
+        return GIDSignIn.sharedInstance().handleURL(
+            url,
+            sourceApplication: options[UIApplicationOpenURLOptionsSourceApplicationKey] as? String,
+            annotation: options[UIApplicationOpenURLOptionsAnnotationKey]
+        )
+    }
+    
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError?) {
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
+        
+        let authentication = user.authentication
+        let credential = FIRGoogleAuthProvider.credentialWithIDToken(authentication.idToken,
+                                                                     accessToken: authentication.accessToken)
+        
+        FIRAuth.auth()?.signInWithCredential(credential) { (user, error) in
+            // ...
+            self.performSegueWithIdentifier("login", sender: nil)
+            
+            
+        }
+        
+        // ...
+        
+    }
+    
+    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
+                withError error: NSError!) {
+        // Perform any operations when the user disconnects from app here.
+        // ...
     }
 }
