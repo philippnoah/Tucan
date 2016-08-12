@@ -19,6 +19,12 @@
 		33332E171D5C41CB00A9F590 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33332E161D5C41CB00A9F590 /* Contacts.storyboard */; };
 		33332E191D5C41D900A9F590 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33332E181D5C41D900A9F590 /* ContactsViewController.swift */; };
 		33332E1C1D5C476000A9F590 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33332E1B1D5C476000A9F590 /* GoogleService-Info.plist */; };
+		3373FA6D1D5DA875008579C3 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3373FA6C1D5DA875008579C3 /* ContactCell.swift */; };
+		3373FA6F1D5DA8CE008579C3 /* ImageMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3373FA6E1D5DA8CE008579C3 /* ImageMessageCell.swift */; };
+		3373FA711D5DA8DC008579C3 /* VoiceMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3373FA701D5DA8DC008579C3 /* VoiceMessageCell.swift */; };
+		3373FA731D5DA8E5008579C3 /* TextMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3373FA721D5DA8E5008579C3 /* TextMessageCell.swift */; };
+		33D838461D5DA25D007905C2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D838451D5DA25D007905C2 /* ChatViewController.swift */; };
+		33D838481D5DA26F007905C2 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D838471D5DA26F007905C2 /* Chat.storyboard */; };
 		C77ED9FC28958FE234CA1E7D /* Pods_Tucan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20969A550E07131BF85D5D4E /* Pods_Tucan.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +44,13 @@
 		33332E161D5C41CB00A9F590 /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
 		33332E181D5C41D900A9F590 /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		33332E1B1D5C476000A9F590 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3373FA6C1D5DA875008579C3 /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		3373FA6E1D5DA8CE008579C3 /* ImageMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMessageCell.swift; sourceTree = "<group>"; };
+		3373FA701D5DA8DC008579C3 /* VoiceMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceMessageCell.swift; sourceTree = "<group>"; };
+		3373FA721D5DA8E5008579C3 /* TextMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextMessageCell.swift; sourceTree = "<group>"; };
 		33D838391D5D2254007905C2 /* Tucan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tucan-Bridging-Header.h"; sourceTree = "<group>"; };
+		33D838451D5DA25D007905C2 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		33D838471D5DA26F007905C2 /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		B3E9D1A768DE804013F2F2C2 /* Pods-Tucan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tucan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tucan/Pods-Tucan.debug.xcconfig"; sourceTree = "<group>"; };
 		D4980757B5CE31D04A5290C5 /* Pods-Tucan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tucan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tucan/Pods-Tucan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,9 +114,11 @@
 		33332E061D5C407900A9F590 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3373FA6B1D5DA854008579C3 /* Prototypes */,
 				33332E101D5C417600A9F590 /* SignUp */,
 				33332E0F1D5C416B00A9F590 /* Login */,
 				33332E151D5C41B800A9F590 /* Contacts */,
+				33D8383E1D5DA181007905C2 /* Chat */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -156,6 +170,26 @@
 			children = (
 			);
 			name = DataStorage;
+			sourceTree = "<group>";
+		};
+		3373FA6B1D5DA854008579C3 /* Prototypes */ = {
+			isa = PBXGroup;
+			children = (
+				3373FA6C1D5DA875008579C3 /* ContactCell.swift */,
+				3373FA6E1D5DA8CE008579C3 /* ImageMessageCell.swift */,
+				3373FA701D5DA8DC008579C3 /* VoiceMessageCell.swift */,
+				3373FA721D5DA8E5008579C3 /* TextMessageCell.swift */,
+			);
+			name = Prototypes;
+			sourceTree = "<group>";
+		};
+		33D8383E1D5DA181007905C2 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				33D838451D5DA25D007905C2 /* ChatViewController.swift */,
+				33D838471D5DA26F007905C2 /* Chat.storyboard */,
+			);
+			name = Chat;
 			sourceTree = "<group>";
 		};
 		604EDAECAEA7A95F501E9F30 /* Frameworks */ = {
@@ -236,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D838481D5DA26F007905C2 /* Chat.storyboard in Resources */,
 				33332DFE1D5C400000A9F590 /* LaunchScreen.storyboard in Resources */,
 				33332DFB1D5C400000A9F590 /* Assets.xcassets in Resources */,
 				33332E121D5C41A900A9F590 /* SignUp.storyboard in Resources */,
@@ -300,9 +335,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3373FA6D1D5DA875008579C3 /* ContactCell.swift in Sources */,
+				3373FA711D5DA8DC008579C3 /* VoiceMessageCell.swift in Sources */,
+				3373FA731D5DA8E5008579C3 /* TextMessageCell.swift in Sources */,
+				3373FA6F1D5DA8CE008579C3 /* ImageMessageCell.swift in Sources */,
 				33332DF61D5C400000A9F590 /* SignUpViewController.swift in Sources */,
 				33332E0E1D5C415900A9F590 /* LoginViewController.swift in Sources */,
 				33332E0C1D5C40DB00A9F590 /* Message.swift in Sources */,
+				33D838461D5DA25D007905C2 /* ChatViewController.swift in Sources */,
 				33332DF41D5C400000A9F590 /* AppDelegate.swift in Sources */,
 				33332E0A1D5C40CA00A9F590 /* User.swift in Sources */,
 				33332E191D5C41D900A9F590 /* ContactsViewController.swift in Sources */,

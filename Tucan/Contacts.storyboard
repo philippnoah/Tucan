@@ -27,13 +27,16 @@
                                 <rect key="frame" x="0.0" y="49" width="600" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mEW-rF-nJ9">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="mEW-rF-nJ9">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mEW-rF-nJ9" id="kra-XA-ZRf">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="pqN-O5-3gR" kind="show" identifier="openChat" id="O8b-nE-2O0"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -56,6 +59,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4zy-wQ-IDC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="558" y="-85"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="Wgy-dy-Evx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" id="pqN-O5-3gR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wsp-0g-BGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023.5" y="-85"/>
         </scene>
     </scenes>
 </document>

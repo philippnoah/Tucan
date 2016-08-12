@@ -19,7 +19,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDeleg
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //Change this to appdelegate
+        //Was in appdelegate, does that change sth?
         GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         

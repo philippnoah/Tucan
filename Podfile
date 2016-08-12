@@ -8,6 +8,7 @@ target 'Tucan' do
   # Pods for Tucan
   pod 'Firebase'
   pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
   pod 'GoogleSignIn'
   
 end
